@@ -13,13 +13,7 @@ function Card(props) {
         margin: '15px',
       }}
     >
-    {console.log("db")}
-     
-      <img
-        src={`https://joeschmoe.io/api/v1/${props.name}`}
-        className="card-img-top"
-        alt="..."
-      />
+    
       <div className="card-body text-center">
         <h5 className="card-title text-black-50">{props.name}</h5>
 

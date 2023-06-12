@@ -1,6 +1,5 @@
 import React, {useState, useEffect, useMemo, useCallback} from 'react'
-import NavigationBar from '../../components/NavBar/NavigationBar'
-import Post from '../../components/ShortPost/ShortPost'
+import {Post} from '../../components'
 import db from '../../utils/db.json'
 function MostLikedPost() {
   let whichSort = useMemo(
@@ -100,14 +99,6 @@ function MostLikedPost() {
               />
             ))
           )}
-
-          {/* <Post></Post>
-                    <Post></Post>
-                    <Post></Post>
-                    <Post></Post>
-                    <Post></Post>
-                    <Post></Post>
-                    <Post></Post> */}
         </ul>
       </div>
     </div>

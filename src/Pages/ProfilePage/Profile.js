@@ -3,9 +3,7 @@ import './profile.css'
 import { useParams } from 'react-router-dom'
 
 import db from '../../utils/db.json'
-import AuthorCard from '../../components/AuthorCard/AuthorCard'
-import FilterHeader from '../../components/FilterHeader/FilterHeader'
-import UserPostList from '../../components/UserPostsList/UserPostList'
+import {AuthorCard,FilterHeader,UserPostList} from '../../components'
 
 function Profile() {
   const routeParams = useParams();
@@ -28,7 +26,6 @@ function Profile() {
 
   // for retriveing post
   useEffect(() => {
-    console.log(routeParams)
     fetchPost(routeParams.authorId)
   }, [fetchPost, routeParams.authorId])
 

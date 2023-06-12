@@ -54,7 +54,6 @@ function Body() {
 
   return (
     <div>
-      {console.log("db")}
       <Container>
         {/* It is usefull when we fetch data from server */}
         {state.error !== '' ? (

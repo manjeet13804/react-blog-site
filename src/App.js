@@ -1,18 +1,11 @@
 import React from 'react'
 import './App.css'
-// import { Button } from "reactstrap";
 
 import 'bootstrap/dist/css/bootstrap.css'
 
-import Body from './Pages/HomePage/Body'
-import AuthorPage from './Pages/ProfilePage/Profile'
-// import Pagination from "./components/Pagination/Pagination"
-
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
-import PostPage from './Pages/PostPage/PostPage'
-import MostLikedPost from './Pages/MostLikedPost/MostLikedPost'
-import NavigationBar from './components/NavBar/NavigationBar'
-import Footer from './components/Footer/Footer'
+import {PostPage,MostLikedPost,Body,AuthorPage} from './Pages'
+import {NavigationBar,Footer} from './components'
 
 function App() {
   return (

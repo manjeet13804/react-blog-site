@@ -1,18 +1,13 @@
-import React, {useState, useEffect, useCallback, useMemo} from 'react'
+import React, {useState, useCallback, useMemo} from 'react'
 import {
   Collapse,
   Navbar,
   NavbarToggler,
-  NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
 } from 'reactstrap'
 import './NavigationBar.css'
 import {Link} from 'react-router-dom'
-
-// import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
-// import App from "../../App.js"
 
 function NavigationBar() {
   let pathName = useMemo(
@@ -35,12 +30,9 @@ function NavigationBar() {
       >
         <NavItem>
           <Link to="/" className="text-white">
-            JSOM
+            HOME
           </Link>
         </NavItem>
-        {/* <NavLink className=" text-white" to="/">
-          {!isNaN(pathName.split('/')[1]) ? 'Authors' : pathName.split('/')[1]}
-        </NavLink> */}
         <NavbarToggler onClick={toggle} style={{width: 'auto'}} />
         <Collapse
           className=""
@@ -56,7 +48,7 @@ function NavigationBar() {
               <Link to="/" onClick={toggle}>
                 <p
                   className={`m-2 ${
-                    !!!pathName.split('/')[1] ? 'text-white' : 'text-secondary '
+                    !!!pathName.split('/')[1] ? 'text-white' : 'text-secondary'
                   }`}
                 >
                   {' '}

@@ -1,9 +1,7 @@
 import React, {useState, useEffect, useCallback} from 'react'
-import PostCard from '../../components/postCard/PostCard'
-import NavigationBar from '../../components/NavBar/NavigationBar'
+import {PostCard,Comment} from '../../components'
 import './PostPage.css'
 import { useParams } from 'react-router-dom'
-import Comment from '../../components/comments/Comment'
 import db from '../../utils/db.json'
 function PostPage() {
   const routeParams = useParams()
